@@ -10,22 +10,16 @@ For the first plot, I think using a bar chart and faceting by family will be abl
 
 ## Plot 2: Dumbbell Plot
 
-This table compares English scores vs Spanish scores in each sibling pair for families 1-6. I think it would be best to use a dumbbell plot with each side representing English vs Spanish. Another option would be to make this into two plots, one for English and another for Spanish? 
-
-![](Images/Plot2.png)
-
-## Plot 3: Dumbbell Plot
-
 Here I also think a dumbbell plot would be most beneficial with each side represented as older vs younger sibling with verb type on Y axis.
 
 ![](Images/Plot3.png)
 
-## Plot 4: Dumbbell Plot
+## Plot 3: Dumbbell Plot
 
 A dumbbell plot here would be best to show sibling order differences. 
 ![](Images/Plot4.png)
 
-## Plot 5: Stacked Barplot/Dumbbell Plot
+## Plot 4: Stacked Barplot/Dumbbell Plot
 
 For the last plot, I think a stacked barplot or again a dumbbell plot would be best since the goal is to show sibling differences.
 ![](Images/Plot5.png)
