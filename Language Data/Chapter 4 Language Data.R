@@ -63,12 +63,7 @@ ggplot2::ggplot(Ratings_3) +
     # and mark Family? # put sibling names on x axis 
 
 
-
-# Plot 2: [Insert here]
-
-
-
-# Plot 3
+# Plot 2
 TMA_total <- tribble(
   ~'TMA', ~'Younger siblings', ~'Older siblings',
   "Present",       18.72,           35.98,
@@ -86,7 +81,7 @@ ggplot(TMA_total, aes(x=`Younger siblings`, xend=`Older siblings`, y=TMA)) +
 
 
 
-# Plot 4
+# Plot 3
 gender_subject <- tribble(
   ~'Subject',    ~'Family',   ~'Target',    ~'NonTarget',
   'Daniel (O)',      '1',       100,         0,
@@ -104,7 +99,7 @@ gender_subject <- tribble(
 ) # Stacked bar chart. Will use as model for other similar plots.
 
 
-# Plot 5: English Lexical insertions, this time with only one value 'presence'
+# Plot 4: English Lexical insertions, this time with only one value 'presence'
 English_insertions <- tribble(
   ~'Subject',    ~'Family',   ~'Presence',
   'Daniel (O)',      '1',       7.14,        
@@ -128,7 +123,7 @@ English_insertions <- tribble(
 
 
 
-  
+##########################################
 
 ## Other plots:
 
