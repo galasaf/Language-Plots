@@ -1,10 +1,5 @@
 # Language Plots
 
-# Hello world
-hello world
-
-### Hello world
-
 I am trying to make four plots, which take the original tables and put them into a publishable ready visualization. The goal is as follows: take the tables and produce into a coherent plot that captures both *family* and *sibling* differences. I have made initial attempts in the R markdown file, but would appreciate further guidance to put these tables into a publishable visualzation. 
 
 ## Plot 1: Bar chart (stacked )
