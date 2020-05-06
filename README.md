@@ -5,7 +5,7 @@ I am trying to make four plots, which take the original tables and put them into
 ## Plot 1
 
 For the first plot, I think using a bar chart and faceting by family will 
-![](Images/Plot1.png){width="100" height="200">}
+![](Images/Plot1.png){width="100" height="200"}
 
 ## Plot 2
 ![](Images/Plot2.png)
