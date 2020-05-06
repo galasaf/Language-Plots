@@ -3,7 +3,8 @@
 
 Four plots I'm trying to make to model the original table in manuscript. 
 
-![alt text](https://github.com/bjk127/Language-Plots/blob/master/Images/Plot1.png)
+
+![](Images/Plot1.png)
 
 ![Plot 2](https://github.com/bjk127/Language-Plots/blob/master/Images/Plot2.png)
 
