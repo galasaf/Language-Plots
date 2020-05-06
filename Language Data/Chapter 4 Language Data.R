@@ -4,8 +4,7 @@ library(ggpubr)
 library(ggalt)
 
 
-
-########################################################################### 1) Ratings
+# Plot 1
 Ratings <- tribble(
   ~'Subject',    ~'Family',   ~'Comprehend',    ~'Speak',
   'Daniel (O)',      '1',         10,             10,
@@ -61,14 +60,15 @@ Ratings_3$`Score Type` <- as.factor(Ratings_3$`Score Type`)
 ggplot2::ggplot(Ratings_3) + 
   geom_bar(aes(x = `Sibling Order`, y = `Score`, fill = `Sibling Order`), stat = "identity") + 
   facet_grid(`Score Type` ~ Family) # but is there any way to put sibling names on the X axis 
-    # and mark Family?
-
-# put sibling names on x axis 
+    # and mark Family? # put sibling names on x axis 
 
 
-############################################################ 3)TMA 
 
-# TMA Total
+# Plot 2: [Insert here]
+
+
+
+# Plot 3
 TMA_total <- tribble(
   ~'TMA', ~'Younger siblings', ~'Older siblings',
   "Present",       18.72,           35.98,
@@ -84,6 +84,53 @@ ggplot(TMA_total, aes(x=`Younger siblings`, xend=`Older siblings`, y=TMA)) +
   geom_dumbbell() 
 
 
+
+
+# Plot 4
+gender_subject <- tribble(
+  ~'Subject',    ~'Family',   ~'Target',    ~'NonTarget',
+  'Daniel (O)',      '1',       100,         0,
+  'Mia (Y)',         '1',       100,         0,
+  'Brent (O)',       '2',       100,         0,
+  'Kyle (Y)',        '2',       100,         0 ,  
+  'Benito (O)',      '3',       97.06,      2.94,
+  'Oscar (Y)',       '3',       70,         30,
+  'Samuel (O)',      '4',       100,        0,
+  'Kendra (Y)',      '4',      87.23,      12.77,
+  'Lani (O)',        '5',      100,        0,
+  'Leo (Y)',         '5',       16.67,     83.33,
+  'Bryce (O)',       '6',       100,       0,
+  'Melvin (Y)',      '6',       100,       0
+) # Stacked bar chart. Will use as model for other similar plots.
+
+
+# Plot 5: English Lexical insertions, this time with only one value 'presence'
+English_insertions <- tribble(
+  ~'Subject',    ~'Family',   ~'Presence',
+  'Daniel (O)',      '1',       7.14,        
+  'Mia (Y)',         '1',       4.35,  
+  'Brent (O)',       '2',       9.84,        
+  'Kyle (Y)',        '2',       16.95,        
+  'Benito (O)',      '3',       14.75,    
+  'Oscar (Y)',       '3',       51.61,       
+  'Samuel (O)',      '4',       7.02,
+  'Kendra (Y)',      '4',      14.93,      
+  'Lani (O)',        '5',      6.56,       
+  'Leo (Y)',         '5',       58,     
+  'Bryce (O)',       '6',       7.14,
+  'Melvin (Y)',      '6',       6.45
+  )      
+  
+  
+  
+
+
+
+
+
+  
+
+## Other plots:
 
 # Present - The goal is to also use barbell plot for these, but with siblings and family located on the 
 # left. The challenge is representing them as percentages. 
@@ -137,52 +184,6 @@ Imperfect_verbs <- tribble(
   'Bryce (O)',       '6',       19.64,
   'Melvin (Y)',      '6',       25.81
 )
-
-############################################################## 4) Target vs non target features
-
-### Gender Subject Target and nontarget
-
-# Stacked bar chart 
-gender_subject <- tribble(
-  ~'Subject',    ~'Family',   ~'Target',    ~'NonTarget',
-  'Daniel (O)',      '1',       100,         0,
-  'Mia (Y)',         '1',       100,         0,
-  'Brent (O)',       '2',       100,         0,
-  'Kyle (Y)',        '2',       100,         0 ,  
-  'Benito (O)',      '3',       97.06,      2.94,
-  'Oscar (Y)',       '3',       70,         30,
-  'Samuel (O)',      '4',       100,        0,
-  'Kendra (Y)',      '4',      87.23,      12.77,
-  'Lani (O)',        '5',      100,        0,
-  'Leo (Y)',         '5',       16.67,     83.33,
-  'Bryce (O)',       '6',       100,       0,
-  'Melvin (Y)',      '6',       100,       0
-)
-
-
-# use as model to make plots for gender_object and verb_formation
-
-
-# English Lexical insertions, this time with only one value 'presence'
-English_insertions <- tribble(
-  ~'Subject',    ~'Family',   ~'Presence',
-  'Daniel (O)',      '1',       7.14,        
-  'Mia (Y)',         '1',       4.35,  
-  'Brent (O)',       '2',       9.84,        
-  'Kyle (Y)',        '2',       16.95,        
-  'Benito (O)',      '3',       14.75,    
-  'Oscar (Y)',       '3',       51.61,       
-  'Samuel (O)',      '4',       7.02,
-  'Kendra (Y)',      '4',      14.93,      
-  'Lani (O)',        '5',      6.56,       
-  'Leo (Y)',         '5',       58,     
-  'Bryce (O)',       '6',       7.14,
-  'Melvin (Y)',      '6',       6.45
-  )      
-  
-  
-  
-  
   
   
   
