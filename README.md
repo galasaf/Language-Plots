@@ -4,7 +4,7 @@
 Four plots I'm trying to make to model the original table in manuscript. 
 
 
-![](Images/Plot1.png)
+![](Images/Plot1.png){:height="50%" width="50%"}
 
 ![Plot 2](https://github.com/bjk127/Language-Plots/blob/master/Images/Plot2.png)
 
